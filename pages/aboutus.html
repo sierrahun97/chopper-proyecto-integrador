@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros</title>
+  <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img src="../images/Logo_Chopper.png" alt="Logo_Chopper" class="img-fluid" width="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="barraNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link active" href="aboutus.html">Sobre Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Mi vet</a></li>
+              <li class="nav-item"><a class="nav-link btn btn-primary text-white"
+                style="background-color: #955EB7; color: white !important;" href="catalog.html">Productos</a></li>
+                <li class="nav-item admin">
+                    <a class="nav-link btn btn-primary text-white"
+                        style="background-color: #0EB1D2; color: white !important;"
+                        href="../admin/admin.html">Administrador</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <!-- <form class="d-flex me-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-outline btn-custom" type="submit">Buscar</button>
+              </form> -->
+              <div class="shopping">
+                <i id="open-cart" class="fas fa-shopping-cart"></i>
+                <span class="quantity">0</span>
+                <!-- Carrito de compras Modal -->
+                <div id="cart-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="close-cart">
+                            <p class="close">&times;</p>
+                        </div>
+                        <h2>Tu Carrito</h2>
+                        <div id="cart-items"></div>
+                        <p id="cart-total"></p>
+                        <button id="checkout-btn" class="btn-pay">Pagar</button>
+                    </div>
+                </div>
+            </div>
+            <a class="nav-link ms-2" id="logged" href="../login/login.html">Iniciar sesión</a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="user-menu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span id="user-greeting"></span> 
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-menu">
+                      <!-- <a class="nav-link ms-2" id="logged" href="./home.html">Cerrar sesión</a> -->
+                  </div>
+              </li>
+          </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="separator-nav">
+        <div id="azul"></div><div id="light-green"></div><div id="turq"></div><div id="morado"></div>
+    </div>
+    <main>
+        <section class="slogan-text text-center p-4">
+            <h1>Tienda para mascotas Chopper</h1>
+            <p>En Chopper, creemos que cada mordisco, ronroneo y salto de alegría merece el mejor cuidado y cariño.</p>
+        </section>
+
+        <section id="carousel">
+            <div class="carousel-container">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/Banner_bff_1.1.png" class="d-block w-100" alt="..." class="img-responsive">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Banner_bff_2.1.png" class="d-block w-100" alt="..." class="img-responsive">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/banner bff 3.png" class="d-block w-100" alt="..." class="img-responsive">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <img src="../img/cat-us.png" alt="about-us" class="img-responsive">
+            <div class="about-text">
+                <h2>Sobre nosotros</h2>
+                <p>En los últimos años, nuestras mascotas han ganado un lugar muy especial en nuestros corazones y
+                    hogares. En Colombia, al menos el 40% de las familias han acogido a un peludito como miembro de la
+                    familia. Esto ha hecho que las personas se vuelvan más conscientes de los cuidados y necesidades de
+                    sus mascotas. Por eso creamos Chopper, una tienda que entiende que cada mascota merece ser
+                    consentida y amada.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="about-text">
+                <h2>¿Qué es Chopper?</h2>
+                <p>En Chopper, nos dedicamos al cuidado y bienestar de los animales domésticos. Nuestro compromiso es
+                    ofrecer productos de la más alta calidad para que cada mascota reciba el mejor tratamiento. Creemos
+                    firmemente en el bienestar animal y nos esforzamos por brindar un servicio excepcional, pensado
+                    especialmente para cubrir las necesidades de quienes más nos importan: tus fieles compañeros. ¡Tu
+                    mascota merece lo mejor, y en Chopper estamos aquí para asegurarlo!
+                </p>
+            </div>
+            <img src="../img/about-us-chopper.png" alt="about-us" class="img-responsive">
+        </section>
+
+        <section id="container">
+            <div class="card col-sm-12 col-md-6 col-lg-3" style="--clr: #0EB1D2;">
+                <div class="img8x">
+                    <img src="../img/img santi.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="content">
+                    <h3>Santiago</h3>
+                    <p> Hola, Soy desarrollador web y me enfoco en el back-end, soy amante de las mascotas, tengo
+                        grandes
+                        habilidades para enseñar y brindar ayuda a quien lo necesite.</p>
+                </div>
+            </div>
+
+            <div class="card" style="--clr: #C8FAA9;">
+                <div class="img8x">
+                    <img src="../img/img angelly.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="content">
+                    <h3>Angelly</h3>
+                    <p>Hola, Soy desarrolladora back-end, me encanta el vinculo que tengo con mi mejor amigo Max, mi
+                        mejor habilidad es transmitir buenas ideas y dar tranquiidad a mi equipo.</p>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3" style="--clr: #5DD6BE;">
+                <div class="img8x">
+                    <img src="../img/juan-pablo.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="content">
+                    <h3>Juan Pablo</h3>
+                    <p>Hola, Soy desarrollador front-end, tengo un gran sentido del humor y siento que las mascotas son
+                        parte de la familia, mi mejor habilidad es investigar.</p>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3" style="--clr: #955EB7;">
+                <div class="img8x">
+                    <img src="../img/mari.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="content">
+                    <h3>Mariana</h3>
+                    <p>Hola, soy desarrolladora front-end, pienso que las mascotas salvan vidas y nos dan una inmensa
+                        alegria, mi mejor habilidad es la creatividad y el diseño.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="separator-footer"></div>
+        <div id="azul"></div><div id="light-green"></div><div id="turq"></div><div id="morado"></div>
+    </div>
+    <footer id="footer">
+        <div class="container-fluid py-4">
+            <div class="d-flex flex-column flex-md-row gap-4 gap-md-2 align-items-end">
+                <div class="container-fluid">
+                    <img src="../images/Logo_Chopper.png" alt="logo">
+                    <div>
+                        <p><strong>Únete a nuestra comunidad</strong><br>
+                            Recibe información actualizada de los productos y descuentos que ofrecemos.
+                        </p>
+                        <!-- <form>
+                            <input type="email" name="user_email" placeholder="Correo electrónico">
+                            <button type="button" class="btn btn-primary botonFooter">Suscribirse</button>
+                        </form> -->
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <table style="width: 100%;">
+                        <tr class="d-flex flex-column gap-2">
+                            <th style="text-align: left; padding-right: 20px;"></th>
+                            <th style="text-align: left;">Contáctenos</th>
+                        </tr>
+                        <tr class="d-flex flex-column gap-2">
+                            <td style="text-align: left; padding-right: 20px;"><a href=""></a></td>
+                            <td style="text-align: left;">NIT: 900123456-7</td>
+                        </tr>
+                        <tr class="d-flex flex-column gap-2">
+                            <td style="text-align: left; padding-right: 20px;"><a href=""></a>
+                            </td>
+                            <td style="text-align: left;">Calle 123 #45-67, Local 8, Bogotá, Colombia</td>
+                        </tr>
+                        <tr class="d-flex flex-column gap-2">
+                            <td style="text-align: left; padding-right: 20px;"><a href=""></a>
+                            </td>
+                            <td style="text-align: left;">+(57) 320 123 4567</td>
+                        </tr>
+                        <tr class="d-flex flex-column gap-2">
+                            <td style="text-align: left; padding-right: 20px;"><a href="">Preguntas frecuentes</a></td>
+                            <td style="text-align: left;"><a href="">contacto@chopperpets.com</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="container-fluid d-flex justify-content-start justify-content-lg-end">
+                    <div class="icon-container p-2 d-flex">
+                        <a href="https://wa.me/" target="_blank">
+                            <i class="fab fa-whatsapp me-3" style="font-size: 32px; color: #25D366;"></i>
+                        </a>
+                        <a href="https://instagram.com/" target="_blank">
+                            <i class="fab fa-instagram me-3" style="font-size: 32px; color: #E1306C;"></i>
+                        </a>
+                        <a href="https://facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-f" style="font-size: 32px; color: #3b5998;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/home.js"></script>
+    <script src="./cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
